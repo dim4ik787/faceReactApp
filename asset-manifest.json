@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/faceReactApp/static/css/main.6170c43b.css",
+    "main.js": "/faceReactApp/static/js/main.7f431b2e.js",
+    "index.html": "/faceReactApp/index.html",
+    "main.6170c43b.css.map": "/faceReactApp/static/css/main.6170c43b.css.map",
+    "main.7f431b2e.js.map": "/faceReactApp/static/js/main.7f431b2e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6170c43b.css",
+    "static/js/main.7f431b2e.js"
+  ]
+}
