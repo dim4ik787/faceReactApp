@@ -10,7 +10,7 @@ import Rank from './components/Rank/Rank';
 import './App.css';
 
 function App () {
-  const [input, setInpit] = useState('');
+  const [input, setInput] = useState('');
   const [imageUrl, setImageUrl] = useState('');
   const [box, setBox] = useState({});
   const [route, setRoute] = useState('signin');
@@ -24,7 +24,7 @@ function App () {
   });
 
   const refreshState = () => {
-    setInpit('');
+    setInput('');
     setImageUrl('');
     setBox({});
     setRoute('signin');
@@ -66,7 +66,7 @@ function App () {
   }
 
   const onInputChange = (event) => {
-    setInpit(event.target.value);
+    setInput(event.target.value);
   }
 
   const onButtonSubmit = () => {
@@ -75,7 +75,7 @@ function App () {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
-              imageUrl
+              imageUrl: input
             })
           })
       .then(response => response.json())
