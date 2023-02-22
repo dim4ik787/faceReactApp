@@ -71,7 +71,7 @@ function App () {
 
   const onButtonSubmit = () => {
     setImageUrl(input);
-    fetch('http://localhost:3000/imageUrl', {
+    fetch('https://smart-brain-api-0cmw.onrender.com/imageUrl', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -81,7 +81,7 @@ function App () {
       .then(response => response.json())
       .then(response => {
         if (response) {
-          fetch('http://localhost:3000/image', {
+          fetch('https://smart-brain-api-0cmw.onrender.com/image', {
             method: 'PUT',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
